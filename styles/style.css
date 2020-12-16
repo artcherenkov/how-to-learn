@@ -22,7 +22,7 @@ h1, h2, h3, p {
 .logo {
   width: 183px;
   height: 32px;
-  background-image: url("../images/logo_place_header.svg");
+  background-image: url('../images/logo_place_header.svg');
 }
 .logo_place_header {
   position: absolute;
@@ -30,7 +30,7 @@ h1, h2, h3, p {
 }
 .logo_place_footer {
   height: 35px;
-  background-image: url("../images/logo_place_footer.svg");
+  background-image: url('../images/logo_place_footer.svg');
 }
 
 .link {
