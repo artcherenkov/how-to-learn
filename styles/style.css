@@ -19,6 +19,12 @@
   width: 183px;
   background-image: url('../images/logo_place_header.svg');
 }
+.logo:hover {
+  opacity: .6;
+}
+.logo:active {
+  opacity: .3;
+}
 .logo_place_header {
   height: 32px;
   position: absolute;
@@ -99,6 +105,12 @@
 .header__link {
   color: var(--blue);
   text-decoration: none;
+}
+.header__link:hover {
+  opacity: .6;
+}
+.header__link:active {
+  opacity: .3;
 }
 
 .header__main-illustration {
@@ -263,6 +275,12 @@
   text-decoration: none;
   z-index: 10;
 }
+.feynman__link:hover {
+  opacity: .6;
+}
+.feynman__link:active {
+  opacity: .3;
+}
 
 .feynman__portrait {
   width: 867px;
@@ -352,6 +370,12 @@
   font-size: 18px;
   display: flex;
   align-items: center;
+}
+.footer__column-link:hover {
+  opacity: .6;
+}
+.footer__column-link:active {
+  opacity: .3;
 }
 
 .footer__social-icon {
