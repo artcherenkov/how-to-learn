@@ -4,10 +4,6 @@
   --blue: #2f80ed;
 }
 
-h1, h2, h3, p {
-  margin: 0;
-}
-
 .page {
   min-width: 1100px;
   max-width: 1600px;
@@ -21,23 +17,16 @@ h1, h2, h3, p {
 
 .logo {
   width: 183px;
-  height: 32px;
   background-image: url('../images/logo_place_header.svg');
 }
 .logo_place_header {
+  height: 32px;
   position: absolute;
   top: 30px;
 }
 .logo_place_footer {
   height: 35px;
   background-image: url('../images/logo_place_footer.svg');
-}
-
-.layer_position_upper {
-  z-index: 10;
-}
-.layer_position_middle {
-  z-index: 5;
 }
 
 .section-title {
@@ -67,6 +56,8 @@ h1, h2, h3, p {
 .digits__title,
 .kaufman__title {
   margin-bottom: 20px;
+  position: relative;
+  z-index: 10;
 }
 
 /*===============================================
@@ -91,14 +82,17 @@ h1, h2, h3, p {
   width: 730px;
   align-self: center;
   position: relative;
+  z-index: 10;
 }
 
 .header__subtitle {
+  margin: 0;
   line-height: 25px;
   font-size: 18px;
   position: absolute;
   bottom: 30px;
   width: 390px;
+  z-index: 10;
 }
 
 .header__link {
@@ -112,6 +106,7 @@ h1, h2, h3, p {
   position: absolute;
   right: 0;
   bottom: 0;
+  z-index: 5;
 }
 
 .header__square-pic {
@@ -195,6 +190,9 @@ h1, h2, h3, p {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  position: relative;
+  z-index: 10;
+
 }
 
 .table__cell {
@@ -242,6 +240,7 @@ h1, h2, h3, p {
   width: 648px;
   text-align: center;
   position: relative;
+  z-index: 10;
 }
 
 .feynman__subtitle {
@@ -250,6 +249,7 @@ h1, h2, h3, p {
   font-size: 36px;
   font-weight: normal;
   position: relative;
+  z-index: 10;
 }
 
 .feynman__link {
@@ -260,6 +260,7 @@ h1, h2, h3, p {
   font-size: 36px;
   color: var(--blue);
   text-decoration: none;
+  z-index: 10;
 }
 
 .feynman__portrait {
@@ -290,6 +291,8 @@ h1, h2, h3, p {
   width: 877px;
   height: 877px;
   right: -210px;
+  background-image: url("../images/kaufman-triangle.svg");
+  background-size: cover;
 }
 
 /*===============================================
@@ -336,7 +339,7 @@ h1, h2, h3, p {
 }
 
 .footer__column-heading {
-  margin-bottom: 20px;
+  margin: 0 0 20px;
   line-height: 30px;
   font-size: 18px;
 }
