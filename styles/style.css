@@ -33,11 +33,6 @@ h1, h2, h3, p {
   background-image: url('../images/logo_place_footer.svg');
 }
 
-.link {
-  color: var(--blue);
-  text-decoration: none;
-}
-
 .layer_position_upper {
   z-index: 10;
 }
@@ -104,6 +99,11 @@ h1, h2, h3, p {
   position: absolute;
   bottom: 30px;
   width: 390px;
+}
+
+.header__link {
+  color: var(--blue);
+  text-decoration: none;
 }
 
 .header__main-illustration {
@@ -258,6 +258,8 @@ h1, h2, h3, p {
   right: 48px;
   line-height: 51px;
   font-size: 36px;
+  color: var(--blue);
+  text-decoration: none;
 }
 
 .feynman__portrait {
