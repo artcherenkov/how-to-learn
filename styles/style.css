@@ -67,6 +67,10 @@
   z-index: 10;
 }
 
+.content__techniques {
+  margin: 0 auto;
+}
+
 /*===============================================
       header
 ===============================================*/
@@ -79,6 +83,7 @@
   position: relative;
   display: flex;
   background-color: var(--light-grey);
+  overflow: hidden;
 }
 
 .header__title {
@@ -382,4 +387,82 @@
   margin-right: 10px;
   width: 16px;
   height: 16px;
+}
+
+/*===============================================
+      rotation
+===============================================*/
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotation {
+  animation: rotation 20s infinite linear;
+}
+
+/*===============================================
+      techniques
+===============================================*/
+
+.techniques {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+
+.techniques__subtitle {
+  margin-top: 20px;
+}
+
+/*===============================================
+      cards
+===============================================*/
+
+.cards {
+  width: 920px;
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cards__item {
+  width: 240px;
+  margin-right: 100px;
+}
+
+.cards__item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.cards__image {
+  width: 160px;
+  height: 160px;
+  margin: 63px 40px 43px;
+  border-radius: 50%;
+}
+
+.cards__title {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 0 16px;
+}
+
+.cards__description {
+  line-height: 23px;
+  font-size: 18px;
+  text-align: center;
+  margin: 0;
 }
